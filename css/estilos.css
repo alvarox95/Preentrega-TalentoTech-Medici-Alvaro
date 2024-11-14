@@ -80,6 +80,13 @@ body {
       border: none;
       cursor: pointer;
     }
+    a{
+      width: 30px;
+      img{
+        width: 30px;
+        padding: 0px;
+      }
+    }
   }
 }
 
@@ -87,6 +94,7 @@ body {
   grid-area: copy;
   background-color: #007bff;
   display: flex;
+  align-items: flex-end;
   justify-content: center;
   a{
     margin-left: 3px;
@@ -126,6 +134,25 @@ ul {
   li:hover {
     transform: scale(1.1); /* Escala el elemento al 110% */
   }
+}
+
+.whatsapp{
+  position: fixed;
+  width: 55px;
+  background-color: #25d366;
+  bottom: 40px;
+  right: 40px;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 999;
+}
+.fa-whatsapp{
+  font-size: 50px;
+}
+.whatsapp:hover{
+  background-color: #128c7e;
 }
 
 .card {

@@ -21,58 +21,6 @@ function fetchRandomPokemon() {
 }
 fetchRandomPokemon();
 
-// function createCard(){
-//   const productos = document.getElementById('productos');
-
-//   const randomIds = [];
-//   for (let i = 0; i < 4; i++) {
-//     randomIds.push(Math.floor(Math.random() * 151) + 1);
-//   }
-
-//   randomIds.forEach(id => {
-//     fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
-//       .then(response => response.json())
-//       .then(pokemonData => {
-//         const card = document.createElement('div');
-//         card.classList.add('card');
-//         card.innerHTML = `
-//           <img src="${pokemonData.sprites.front_default}" alt="${pokemonData.name}">
-//           <h2>${pokemonData.name}</h2>
-//           <p>${pokemonData.types.map(type => type.type.name).join(', ')}</p>
-//         `;
-//         console.log(pokemonData);
-
-//         productos.appendChild(card);
-//       })
-//       .catch(error => console.error('Error fetching Pokémon data:', error));
-//     });
-// }
-// createCard();
-
-// async function obtenerDescripcionPokedex(pokemon) {
-//   const url = `https://pokeapi.co/api/v2/pokemon-species/${pokemon.toLowerCase()}`;
-//   try {
-//       const respuesta = await fetch(url);
-//       if (respuesta.ok) {
-//           const datos = await respuesta.json();
-//           const descripcion = datos.flavor_text_entries.find(entry => entry.language.name === 'es');
-//           return descripcion ? descripcion.flavor_text : "Descripción no disponible.";
-//       }
-//   } catch (error) {
-//       console.error("Error al obtener la descripción de la Pokédex:", error);
-//   }
-//   return "Descripción no disponible.";
-// }
-
-// // Ejemplo de uso
-// const pokemon = "pikachu";
-// obtenerDescripcionPokedex(pokemon).then(descripcion => {
-//   console.log(`Descripción de Pokédex para ${pokemon.charAt(0).toUpperCase() + pokemon.slice(1)}: ${descripcion}`);
-// });
-// obtenerDescripcionPokedex("charmander").then(descripcion => {
-//   console.log(`Descripción de Pokédex para Charmander: ${descripcion}`);
-// });
-
 function capitalizarPrimeraLetra(cadena) {
   return cadena.charAt(0).toUpperCase() + cadena.slice(1).toLowerCase();
 }
@@ -125,5 +73,4 @@ async function createCard() {
       }
   }
 }
-
 createCard();

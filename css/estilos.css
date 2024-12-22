@@ -231,3 +231,6 @@ ul {
   }
 }
 
+.main{
+  grid-area: productos;
+}

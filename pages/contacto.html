@@ -23,13 +23,13 @@
   <main>
     <h1>Contacto</h1>
     <p>Si tienes alguna duda o comentario, no dudes en contactarnos.</p>
-    <form action="">
+    <form action="" id = "formulario-contacto">
       <label for="nombre">Nombre:</label>
-      <input type="text" class="nombre" name="nombre" required>
+      <input type="text" class="nombre" name="nombre" id="nombre">
       <label for="email">Correo electrónico:</label>
-      <input type="email" class="email" name="email" required>
+      <input type="email" class="email" name="email" id="email">
       <label for="mensaje">Mensaje:</label>
-      <textarea name="mensaje" class="mensaje" cols="30" rows="10" required></textarea>
+      <textarea name="mensaje" class="mensaje" for="mensaje" maxlength="200" id="mensaje" placeholder="El texto debe de tener un minimo de 10 caracteres"></textarea>      
       <button type="submit">Enviar</button>
     </form>
   </main>
@@ -67,5 +67,6 @@
     Copyright © 2024 - Diseño Web realizado por: 
     <a href="https://walink.co/21ac22" target="_blank"> Alvaro Medici</a>
   </div>
+  <script src="../js/validacion.js"></script>
 </body>
 </html>

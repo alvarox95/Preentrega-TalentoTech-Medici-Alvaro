@@ -29,7 +29,7 @@ body {
   grid-template-areas:
     "header header"
     "presentacion presentacion"
-    "producto producto"
+    "productos productos"
     "footer footer"
     "copy copy";
 }
@@ -106,8 +106,8 @@ body {
   background-color: #007bff;
 }
 
-.producto {
-  grid-area: producto;
+.productos {
+  grid-area: productos;
   background-color: aqua;
 }
 
@@ -160,7 +160,8 @@ ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   img {
-    width: 100%;
+    width: 70%;
+    margin-left: 15%;
     border-radius: 8px 8px 0 0;
   }
   h3 {

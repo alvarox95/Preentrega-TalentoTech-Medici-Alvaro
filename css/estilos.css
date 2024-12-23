@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: 15% auto auto 20% 2%;
   /* gap: 10px 10px; */
   grid-template-areas:
     "header header"
@@ -40,16 +40,17 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #007bff60;
+  background-color: #0000003d;
 }
 
 .footer {
   grid-area: footer;
-  background-color: green;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-end;
+  border-radius: 10px;
+  background-color: #0000005e;
   .logofooter {
     height: 100%;
     display: flex;
@@ -63,7 +64,7 @@ body {
       flex-wrap: wrap;
     }
   }
-  .newsletter {
+  .redes {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -75,7 +76,7 @@ body {
     }
     button {
       padding: 10px;
-      background-color: #007bff;
+      background-color: #007bff7e;
       color: white;
       border: none;
       cursor: pointer;
@@ -92,12 +93,12 @@ body {
 
 .copy {
   grid-area: copy;
-  background-color: #007bff;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   a{
     margin-left: 3px;
+    color: black !important;
   }
 }
 
@@ -235,6 +236,57 @@ ul {
   grid-area: productos;
 }
 
-.d-none{
-  display: none;
+.main-contacto{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  .section-contacto{
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.171);
+  }
+}
+#formulario-contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  textarea{
+    height: 255px;
+    width: 40vh;
+    resize: none;
+  }
+}
+
+.modern-button {
+  background: linear-gradient(135deg, #cb1111, #e7f522);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.body-contacto{
+  background-image: url("../assets/img/background-contacto.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  a{
+    color: white;
+  }
+  h3{
+    color: white;
+  }
 }

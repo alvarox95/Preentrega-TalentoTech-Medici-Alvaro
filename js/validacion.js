@@ -9,10 +9,6 @@ formulario.addEventListener("submit", (event) => {
   const mensaje = document.getElementById("mensaje").value.trim();
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  console.log(nombre);
-  console.log(email);
-  console.log(mensaje);
-
   let formularioValido = true;
 
   if (nombre === "" || !emailRegex.test(email) || mensaje.length < 10) {

@@ -7,7 +7,7 @@
   <link rel="icon" href="../assets/img/favicon.png" />
   <title>Contacto</title>
 </head>
-<body class="body">
+<body class="body-contacto">
   <header class="header">
     <a href="../index.html">
       <img src="../assets/img/logo.png" alt="LOGOmas" width="200px">
@@ -20,18 +20,20 @@
         <li><a href="../pages/contacto.html">Contacto</a></li>
       </ul>
   </header>
-  <main>
-    <h1>Contacto</h1>
-    <p>Si tienes alguna duda o comentario, no dudes en contactarnos.</p>
-    <form action="" id = "formulario-contacto">
-      <label for="nombre">Nombre:</label>
-      <input type="text" class="nombre" name="nombre" id="nombre">
-      <label for="email">Correo electrónico:</label>
-      <input type="email" class="email" name="email" id="email">
-      <label for="mensaje">Mensaje:</label>
-      <textarea name="mensaje" class="mensaje" for="mensaje" maxlength="200" id="mensaje" placeholder="El texto debe de tener un minimo de 10 caracteres"></textarea>      
-      <button type="submit">Enviar</button>
-    </form>
+  <main class="main-contacto">
+    <section class="section-contacto">
+      <h1>Contacto</h1>
+      <p>Si tienes alguna duda o comentario, no dudes en contactarnos.</p>
+      <form action="" id = "formulario-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="nombre" name="nombre" id="nombre">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" class="email" name="email" id="email">
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" class="mensaje" for="mensaje" maxlength="200" id="mensaje" placeholder="El texto debe de tener un minimo de 10 caracteres"></textarea>      
+        <button type="submit" class="modern-button">Enviar</button>
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <div class="logofooter">
@@ -47,13 +49,7 @@
         <li><a href="../pages/contacto.html">Contacto</a></li>
       </ul>
     </div>
-    <div class="newsletter">
-      <h3>Newsletter</h3>
-      <p>Suscríbete a nuestro boletín para recibir noticias y promociones.</p>
-      <form action="">
-        <input type="email" name="email" id="email" placeholder="Correo electrónico">
-        <button type="submit">Suscribirme</button>
-      </form>
+    <div class="redes">
       <h3>Redes Sociales</h3>
       <a href="https://www.instagram.com" target="_blank">
         <img src="../assets/img/instagramlogo.png" alt="instagram">
@@ -65,7 +61,7 @@
   </footer>
   <div class="copy">
     Copyright © 2024 - Diseño Web realizado por: 
-    <a href="https://walink.co/21ac22" target="_blank"> Alvaro Medici</a>
+    <a href="https://walink.co/21ac22" target="_blank" class="link-mio"> Alvaro Medici</a>
   </div>
   <script src="../js/validacion.js"></script>
 </body>

@@ -261,7 +261,7 @@ ul {
       align-items: center;
       flex-wrap: wrap;
       textarea{
-        height: 255px;
+        height: 25vh;
         width: 40vh;
         resize: none;
         margin-bottom: 10px;

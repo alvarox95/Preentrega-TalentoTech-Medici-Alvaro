@@ -271,7 +271,7 @@ ul {
 }
 
 .modern-button {
-  background: linear-gradient(135deg, #cb1111, #e7f522);
+  background:  linear-gradient(90deg, rgba(0,255,0,1) 0%, rgba(255,72,0,1) 50%, rgba(0,215,255,1) 100%);
   color: #fff;
   border: none;
   border-radius: 8px;

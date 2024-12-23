@@ -47,8 +47,8 @@ body {
   grid-area: footer;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-end;
+  justify-content: space-around;
+  align-items: center;
   border-radius: 10px;
   background-color: #0000005e;
   .logofooter {
@@ -65,10 +65,10 @@ body {
     }
   }
   .redes {
-    display: flex;
-    flex-direction: column;
     height: 100%;
     width: 25%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     input {
       padding: 10px;
@@ -248,6 +248,9 @@ ul {
   .section-contacto{
     display: flex;
     border-radius: 10px;
+    width: 40%;
+    height: 55%;
+    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;

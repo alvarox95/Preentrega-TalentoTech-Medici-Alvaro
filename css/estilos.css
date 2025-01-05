@@ -85,6 +85,7 @@ body {
       width: 30px;
       img{
         width: 30px;
+        height: 30px;
         padding: 0px;
       }
     }
@@ -123,6 +124,8 @@ a {
   img {
     padding: 20px;
     transition: transform 0.3s ease; /* Añade una transición suave */
+    width: 300px;
+    height: 110px;
   }
   img:hover {
     transform: scale(1.1); /* Escala el elemento al 110% */
@@ -165,7 +168,7 @@ ul {
   padding: 16px;
   max-width: 300px;
   margin: 1% 3%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.267);
   transition: transform 0.3s ease;
   img {
     width: 70%;
@@ -235,7 +238,7 @@ ul {
 .main{
   grid-area: productos;
 }
-
+ 
 .main-contacto{
   width: 100%;
   height: 100vh;
@@ -245,26 +248,74 @@ ul {
   align-content: center;
   justify-content: center;
   align-items: center;
+  h1{
+    color: white;
+    font-size: 4vh;
+    text-shadow: 2px 2px 4px rgba(0, 225, 255, 0.459);
+  }
+  p{
+    color: white;
+    font-size: 2vh;
+
+  }
   .section-contacto{
     display: flex;
     border-radius: 10px;
-    width: 40%;
-    height: 55%;
+    width:80vh;
+    height: 70vh;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.171);
+    background-color: rgba(0, 0, 0, 0.281);
     #formulario-contacto{
       display: flex;
       flex-direction: column;
       align-items: center;
       flex-wrap: wrap;
+      position: relative;
+      .nombre{
+        margin-top: 15px;
+        width: 300px;
+        height: 30px;
+        border-radius: 6px;
+        font-size: 18px;
+        padding: 0 15px;
+        border: 2px solid #fff;
+        background: transparent;
+        color: #fff;
+        outline: none;
+        }
+      .nombre::placeholder{
+        color: #fff;
+      }
+      /* label{
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 19px;
+        pointer-events: none;
+      } */
       textarea{
-        height: 255px;
-        width: 40vh;
+        margin: 15px;
+        height: 35vh;
+        width: 60vh;
         resize: none;
         margin-bottom: 10px;
+        border-radius: 6px;
+        font-size: 18px;
+        padding: 5px;
+        border: 2px solid #fff;
+        background: transparent;
+        color: #fff;
+        outline: none;
+        field-sizing: content;
+
+      }
+      textarea::placeholder{
+        color: #fff;
       }
     }
   }

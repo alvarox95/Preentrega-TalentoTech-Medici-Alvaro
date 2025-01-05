@@ -299,9 +299,8 @@ ul {
         pointer-events: none;
       } */
       textarea{
-        margin: 15px;
-        height: 35vh;
-        width: 60vh;
+        height: 25vh;
+        width: 40vh;
         resize: none;
         margin-bottom: 10px;
         border-radius: 6px;
